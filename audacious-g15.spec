@@ -1,13 +1,13 @@
 Name:                   audacious-g15
 Version:                2.5.4
-Release:                %mkrel 1
+Release:                %mkrel 2
 Summary:                Very simple spectrum analyser and oscilloscope for audacious
 License:                GPL
 Group:                  System/Configuration/Hardware
 URL:                    http://g15daemon.sourceforge.net/
 Source0:                http://downloads.sourceforge.net/g15daemon/g15daemon-audacious-%{version}.tar.bz2
 Provides:               g15daemon-audacious = %{version}-%{release}
-Requires:               audacious
+Requires:               audacious-plugins
 BuildRequires:          audacious-devel
 BuildRequires:          g15-devel
 BuildRequires:          g15daemon_client-devel
