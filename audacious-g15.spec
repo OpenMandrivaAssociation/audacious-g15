@@ -1,6 +1,6 @@
 Name:                   audacious-g15
 Version:                2.5.4
-Release:                %mkrel 3
+Release:                %mkrel 4
 Summary:                Very simple spectrum analyser and oscilloscope for audacious
 License:                GPL
 Group:                  System/Configuration/Hardware
