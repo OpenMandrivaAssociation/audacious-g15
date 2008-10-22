@@ -1,9 +1,9 @@
 Name:                   audacious-g15
-Version:                2.5.4
-Release:                %mkrel 4
+Version:                2.5.5
+Release:                %mkrel 1
 Summary:                Very simple spectrum analyser and oscilloscope for audacious
-License:                GPL
-Group:                  System/Configuration/Hardware
+License:                GPLv2+
+Group:                  Sound
 URL:                    http://g15daemon.sourceforge.net/
 Source0:                http://downloads.sourceforge.net/g15daemon/g15daemon-audacious-%{version}.tar.bz2
 Provides:               g15daemon-audacious = %{version}-%{release}
@@ -22,16 +22,14 @@ This plugin depends on glib devel and audacious devel packages.
 
 %prep
 %setup -q -n g15daemon-audacious-%{version}
-./autogen.sh
 
 %build
-%{configure2_5x}
+%{configure2_5x} --disable-static
 %{make}
 
 %install
 %{__rm} -rf %{buildroot}
 %{makeinstall_std}
-%{__rm} %{buildroot}%{_libdir}/audacious/Visualization/*.a
 %{__rm} %{buildroot}%{_libdir}/audacious/Visualization/*.la
 
 %clean
@@ -39,6 +37,6 @@ This plugin depends on glib devel and audacious devel packages.
 
 %files 
 %defattr(0644,root,root,0755)
-%doc AUTHORS COPYING ChangeLog INSTALL NEWS README TODO
+%doc AUTHORS README
 %defattr(-,root,root,0755)
 %{_libdir}/audacious/Visualization/libg15daemon_audacious_spectrum.so
