@@ -1,0 +1,11 @@
+diff -p -up g15daemon-audacious-2.5.7/g15daemon_audacious_spectrum.c~ g15daemon-audacious-2.5.7/g15daemon_audacious_spectrum.c
+--- g15daemon-audacious-2.5.7/g15daemon_audacious_spectrum.c~	2009-04-21 23:34:11.000000000 +0200
++++ g15daemon-audacious-2.5.7/g15daemon_audacious_spectrum.c	2010-01-08 11:01:59.000000000 +0100
+@@ -53,7 +53,6 @@
+ #endif
+ 
+ #include <audacious/configdb.h>
+-#include <audacious/playlist.h>
+ 
+ #ifdef OLD_PLUGIN
+ #include <audacious/titlestring.h>
