@@ -4,7 +4,7 @@ Release:                %mkrel 2
 Summary:                Very simple spectrum analyser and oscilloscope for audacious
 License:                GPLv2+
 Group:                  Sound
-URL:                    http://g15daemon.sourceforge.net/
+URL:                    https://g15daemon.sourceforge.net/
 Source0:                http://downloads.sourceforge.net/g15daemon/g15daemon-audacious-%{version}.tar.bz2
 Patch: g15daemon-audacious-2.5.7-fix-build.patch
 Provides:               g15daemon-audacious = %{version}-%{release}
